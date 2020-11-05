@@ -1,0 +1,15 @@
+{
+    "compile": {
+        "gasEstimates": {
+            "creation": {
+                "codeDepositCost": "161600",
+                "executionCost": "infinite",
+                "totalCost": "infinite"
+            },
+            "external": {
+                "message()": "infinite",
+                "update(string)": "infinite"
+            }
+        }
+    }
+}
