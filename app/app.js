@@ -1,9 +1,11 @@
 // 对象' contract '在这里被注入，它包含了所有合约的所有数据，按合约名称键值:
-// Contracts['HelloWorld'] = {
-//  abi: [],
-//  address: "0x..",
-//  endpoint: "http://...."
-// }
+Contracts['HelloWorld'] = {
+ abi: [],
+//  契约实例的地址 
+ address: "0x...",
+// 服务器地址端口连接
+ endpoint: "127.0.0.1:7545"
+}
 
 //创建智能契约的实例，将其作为属性传递，
 //它允许web3.js与之交互。
