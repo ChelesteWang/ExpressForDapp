@@ -38,7 +38,7 @@ router.get("/getGasPrice", function (req, res, next) {
 });
 
 router.post("/sendMessage", function (req, res, next) {
-//   let { msg, from, to } = req.body;
+  //   let { msg, from, to } = req.body;
   var msg = "helloworld";
   let data = web3.utils.toHex(msg);
   var from = "0xa4D36E545C786f9aFf568B369deb2DA9c08583B8";
@@ -57,4 +57,6 @@ router.post("/sendMessage", function (req, res, next) {
     res.send(result);
   });
 });
+
 module.exports = router;
+
