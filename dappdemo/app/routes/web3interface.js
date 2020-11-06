@@ -37,8 +37,8 @@ router.get("/getGasPrice", function (req, res, next) {
   });
 });
 
-router.get("/1234", function (req, res, next) {
-  //   let { msg } = req.body;
+router.post("/sendMessage", function (req, res, next) {
+//   let { msg, from, to } = req.body;
   var msg = "helloworld";
   let data = web3.utils.toHex(msg);
   var from = "0xa4D36E545C786f9aFf568B369deb2DA9c08583B8";
@@ -53,7 +53,7 @@ router.get("/1234", function (req, res, next) {
   web3.eth.sendTransaction(transaction, (error, hash) => {
     console.log(hash);
     var result = web3.utils.toAscii(hash);
-    console.log(result)
+    console.log(result);
     res.send(result);
   });
 });
