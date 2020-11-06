@@ -9,11 +9,6 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-var Web = require('web3');
-var fs = require('fs');
-var net = require('net');
-
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
